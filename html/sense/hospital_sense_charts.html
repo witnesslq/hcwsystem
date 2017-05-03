@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCWCloud医疗大数据平台-院感监控分析</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../css/component.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body class="clearfix">
+<h3 class="m-crumb">当前位置：院感监控分析 <i></i> 报表</h3>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_01_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span class="steel_text">- 科室：</span>
+        <select id="department_01_01" class="form_input long">
+            <option value="">全部</option>
+            <option value="内科">内科</option>
+            <option value="外科">外科</option>
+            <option value="妇科">妇科</option>
+            <option value="儿科">儿科</option>
+            <option value="神经科">神经科</option>
+        </select>
+        <span id="querybtn_01_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="panel_01_01" class="m-panel">
+        <h3 id="title_01_01">2017年院感例数、同比及环比统计</h3>
+        <ul class="list-inline clearfix">
+            <li class="col-xs-4">
+                <h4>例数</h4>
+                <p id="number_01_01">4521</p>
+            </li>
+            <li class="col-xs-4">
+                <h4>同比</h4>
+                <p id="period_01_01">2%</p>
+            </li>
+            <li class="col-xs-4">
+                <h4>环比</h4>
+                <p id="per_year_01_01">3%</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_01_02" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <input id="month_01_02" readonly="" class="form_input month_date" type="text"/>
+        <span class="steel_text">月</span>
+        <span class="steel_text">- 科室：</span>
+        <select id="department_01_02" class="form_input long">
+            <option value="">全部</option>
+            <option value="内科">内科</option>
+            <option value="外科">外科</option>
+            <option value="妇科">妇科</option>
+            <option value="儿科">儿科</option>
+            <option value="神经科">神经科</option>
+        </select>
+        <span id="querybtn_01_02" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="panel_01_02" class="m-panel">
+        <h3 id="title_01_02">2017年05月院感例数、同比及环比统计</h3>
+        <ul class="list-inline clearfix">
+            <li class="col-xs-4">
+                <h4>例数</h4>
+                <p id="number_01_02">232</p>
+            </li>
+            <li class="col-xs-4">
+                <h4>同比</h4>
+                <p id="period_01_02">1%</p>
+            </li>
+            <li class="col-xs-4">
+                <h4>环比</h4>
+                <p id="per_year_01_02">2%</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/echarts.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.js"></script>
+<script src="../../js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../../js/config.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/inner/hospital_sense_charts.js"></script>
+</body>
+</html>

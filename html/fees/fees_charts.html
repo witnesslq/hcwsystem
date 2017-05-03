@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCWCloud医疗大数据平台-医保控费分析</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../css/component.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body class="clearfix">
+<h3 class="m-crumb">当前位置：医保控费分析 <i></i> 报表</h3>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_01_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_01_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="panel_01_01" class="m-panel">
+        <h3 id="title_01_01">2017年住院均次费用同比、环比统计</h3>
+        <ul class="list-inline clearfix">
+            <li class="col-xs-6">
+                <h4>同比</h4>
+                <p id="period_01_01">1%</p>
+            </li>
+            <li class="col-xs-6">
+                <h4>环比</h4>
+                <p id="per_year_01_01">2%</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_01_02" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <input id="month_01_02" readonly="" class="form_input month_date" type="text"/>
+        <span class="steel_text">月</span>
+        <span id="querybtn_01_02" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="panel_01_02" class="m-panel">
+        <h3 id="title_01_02">2017年03月住院均次费用同比、环比统计</h3>
+        <ul class="list-inline clearfix">
+            <li class="col-xs-6">
+                <h4>同比</h4>
+                <p id="period_01_02">2%</p>
+            </li>
+            <li class="col-xs-6">
+                <h4>环比</h4>
+                <p id="per_year_01_02">3%</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_02_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_02_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_02_01" class="chart">
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_02_02" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <input id="month_02_02" readonly="" class="form_input month_date" type="text"/>
+        <span class="steel_text">月</span>
+        <span id="querybtn_02_02" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_02_02" class="chart">
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_03_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_03_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_03_01" class="m-list">
+        <h3 id="title_03_01">大项目各科室均次费用Top10</h3>
+        <dl id="list_03_01">
+            <dt class="clearfix">
+                <span class="pull-left">科室</span>
+                <span class="pull-right cost">费用</span>
+            </dt>
+            <dd class="clearfix">
+                <span class="pull-left">科室一</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室二</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室三</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室四</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室五</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室六</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室七</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室八</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室九</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室十</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_04_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_04_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_04_01" class="m-list">
+        <h3 id="title_04_01">住院各科室均次费用Top10</h3>
+        <dl id="list_04_01">
+            <dt class="clearfix">
+                <span class="pull-left">科室</span>
+                <span class="pull-right cost">费用</span>
+            </dt>
+            <dd class="clearfix">
+                <span class="pull-left">科室一</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室二</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室三</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室四</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室五</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室六</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室七</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室八</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室九</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室十</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_05_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_05_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_05_01" class="m-list">
+        <h3 id="title_05_01">住院各科室人次Top10</h3>
+        <dl id="list_05_01">
+            <dt class="clearfix">
+                <span class="pull-left">科室</span>
+                <span class="pull-right cost">费用</span>
+            </dt>
+            <dd class="clearfix">
+                <span class="pull-left">科室一</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室二</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室三</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室四</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室五</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室六</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室七</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室八</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室九</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室十</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="m-chart-box">
+    <div class="steel_date">
+        <input id="year_06_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span id="querybtn_06_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_06_01" class="m-list">
+        <h3 id="title_06_01">住院各科室总费用Top10</h3>
+        <dl id="list_06_01">
+            <dt class="clearfix">
+                <span class="pull-left">科室</span>
+                <span class="pull-right cost">费用</span>
+            </dt>
+            <dd class="clearfix">
+                <span class="pull-left">科室一</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室二</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室三</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室四</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室五</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室六</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室七</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室八</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室九</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+            <dd class="clearfix">
+                <span class="pull-left">科室十</span>
+                <span class="pull-right cost">34万</span>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="m-chart-box long">
+    <div class="steel_date">
+        <input id="year_07_01" readonly="" class="form_input year_date" type="text"/>
+        <span class="steel_text">年</span>
+        <span class="steel_text">科室：</span>
+        <input id="department_07_01" class="form_input long" type="text"/>
+        <span class="steel_text">住院号：</span>
+        <input id="inhospitalnum_07_01" class="form_input long" type="text"/>
+        <span class="steel_text">姓名：</span>
+        <input id="name_07_01" class="form_input long" type="text"/>
+        <span id="querybtn_07_01" class="m-button m-button-query">查 询</span>
+    </div>
+    <div id="chart_07_01" class="m-table">
+        <h3>场均住院项目明细</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>住院号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>科室</th>
+                <th>病区</th>
+                <th>床位</th>
+                <th>状态</th>
+                <th>入院时间</th>
+            </tr>
+            </thead>
+            <tbody id="tbody_07_01">
+            <tr>
+                <td>323232</td>
+                <td>张三</td>
+                <td>男</td>
+                <td>27</td>
+                <td>内科</td>
+                <td>老年人区</td>
+                <td>12-21</td>
+                <td>在院</td>
+                <td>2016-02-03</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/echarts.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.js"></script>
+<script src="../../js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../../js/config.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/inner/fees_charts.js"></script>
+</body>
+</html>
