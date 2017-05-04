@@ -48,14 +48,15 @@
     //初始化左侧菜单内容
     dhtmlx_myLayout.cells('b').attachHTMLString('<div class="left-menu">\
                 <div class="ctrl"><i></i></div>\
-                <dl class="index-menu active selected"><dt>报表概况<i></i></dt><dd class="active" hrefurl="html/index/index.html">首页</dd></dl>\
-                <dl class="quality-analysis"><dt>医疗质量分析<i></i></dt><dd hrefurl="html/quality/quality_charts.html">报表</dd></dl>\
-                <dl class="work-efficiency"><dt>工作效率分析<i></i></dt><dd hrefurl="html/efficiency/efficiency_charts.html">报表</dd></dl>\
-                <dl class="insurance-fee"><dt>医保控费分析<i></i></dt><dd hrefurl="html/fees/fees_charts.html">报表</dd></dl>\
-                <dl class="volume-analysis"><dt>业务量分析<i></i></dt><dd hrefurl="html/volume/volume_charts.html">报表</dd></dl>\
-                <dl class="medical-analysis"><dt>医技分析<i></i></dt><dd hrefurl="html/medical/medical_charts.html">报表</dd></dl>\
-                <dl class="medicalcare-income"><dt>医疗收入分析<i></i></dt><dd hrefurl="html/medicalcare/medicalcare_charts.html">报表</dd></dl>\
-                <dl class="hospital-sense"><dt>院感监控分析<i></i></dt><dd hrefurl="html/sense/hospital_sense_charts.html">报表</dd></dl>\
+                <dl class="index-menu active selected"><dt>数据面板<i></i></dt><dd class="active" hrefurl="html/index/index.html">概览</dd></dl>\
+                <dl class="work-efficiency"><dt>工作效率<i></i></dt><dd hrefurl="html/efficiency/efficiency_charts.html">概述</dd><dd hrefurl="">日均门诊</dd><dd>出勤情况</dd><dd>医师负担</dd><dd>床位使用周转</dd></dl>\
+                <dl class="quality-analysis"><dt>医疗质量<i></i></dt><dd hrefurl="html/quality/quality_charts.html">概述</dd><dd>治疗结果</dd><dd>住院死亡监控</dd><dd>重返分析</dd><dd>手术并发症</dd><dd>合理用药</dd><dd>单病种质量</dd></dl>\
+                <dl class="insurance-fee"><dt>医保控费<i></i></dt><dd hrefurl="html/fees/fees_charts.html">概述</dd><dd>均次费用</dd><dd>费用构成分析</dd><dd>不合理用药</dd><dd>过度诊疗</dd></dl>\
+                <dl class="medicalcare-income"><dt>医疗收入<i></i></dt><dd hrefurl="html/medicalcare/medicalcare_charts.html">概述</dd><dd>门诊收入</dd><dd>住院收入</dd><dd>贡献度分析</dd><dd>收入构成分析</dd><dd>多维分析</dd></dl>\
+                <dl class="hospital-sense"><dt>院感分析<i></i></dt><dd hrefurl="html/sense/hospital_sense_charts.html">概述</dd><dd>感染病例</dd><dd>手术部位</dd><dd>ICU</dd><dd>高危新生儿</dd><dd>抗菌药物</dd></dl>\
+                <dl class="medical-analysis"><dt>医技分析<i></i></dt><dd hrefurl="html/medical/medical_charts.html">概述</dd><dd>检查</dd><dd>检测</dd><dd>手术</dd><dd>麻醉</dd></dl>\
+                <dl class="volume-analysis"><dt>工作负荷<i></i></dt><dd hrefurl="html/volume/volume_charts.html">概述</dd><dd>门诊</dd><dd>住院</dd><dd>手术</dd><dd>体检</dd><dd>床位</dd></dl>\
+                <dl class="volume-allocation"><dt>资源配置<i></i></dt><dd>人力</dd><dd>设备</dd><dd>床位</dd></dl>\
                 <div class="mouse-menu"></div>\
             </div>');
     //初始化右侧中间主体内容
@@ -119,7 +120,9 @@
             $(this).addClass('active').siblings().removeClass('active');
             $(this).parent().addClass('selected').siblings().removeClass('selected');
             $(this).parent().siblings().find('dd').removeClass('active');
-            dhtmlx_myLayout.cells('c').attachURL($(this).attr('hrefurl'));
+            if ($(this).attr('hrefurl')) {
+                dhtmlx_myLayout.cells('c').attachURL($(this).attr('hrefurl'));
+            }
         });
     }
     //左侧菜单解除点击事件
@@ -184,7 +187,9 @@
         $target.find('dd').removeClass('active');
         $target.siblings().find('dd').removeClass('active');
         $target.find('dd:contains(' + $this.text() + ')').addClass('active');
-        dhtmlx_myLayout.cells('c').attachURL($(this).attr('hrefurl'));
+        if ($(this).attr('hrefurl') && $(this).attr('hrefurl')!='undefined') {
+            dhtmlx_myLayout.cells('c').attachURL($(this).attr('hrefurl'));
+        }
     });
     //头部历史订单集群相关操作结束
     //所有弹窗父类

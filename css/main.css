@@ -26,20 +26,22 @@
 .center-body .left-menu > dl { height: 40px; overflow: hidden; border-bottom: 1px solid #2a68c0; background-color: #2559a4; transition: height 0.3s; }
 .center-body .left-menu > dl:hover { background-color: #2256a1; }
 .center-body .left-menu > dl.index-menu.active { height: 76px; }
-.center-body .left-menu > dl.quality-analysis.active { height: 76px; }
-.center-body .left-menu > dl.work-efficiency.active { height: 76px; }
-.center-body .left-menu > dl.insurance-fee.active { height: 76px; }
+.center-body .left-menu > dl.quality-analysis.active { height: 294px; }
+.center-body .left-menu > dl.work-efficiency.active { height: 222px; }
+.center-body .left-menu > dl.insurance-fee.active { height: 222px; }
 .center-body .left-menu > dl.system-manger.active { height: 184px; }
-.center-body .left-menu > dl.volume-analysis.active { height: 76px; }
-.center-body .left-menu > dl.medical-analysis.active { height: 76px; }
-.center-body .left-menu > dl.medicalcare-income.active { height: 76px; }
-.center-body .left-menu > dl.hospital-sense.active { height: 76px; }
+.center-body .left-menu > dl.volume-analysis.active { height: 258px; }
+.center-body .left-menu > dl.volume-allocation.active { height: 148px; }
+.center-body .left-menu > dl.medical-analysis.active { height: 222px; }
+.center-body .left-menu > dl.medicalcare-income.active { height: 258px; }
+.center-body .left-menu > dl.hospital-sense.active { height: 258px; }
 .center-body .left-menu > dl > dt { position: relative; width: 180px; height: 40px; line-height: 40px; font-size: 14px; padding-left: 50px; cursor: pointer; }
 .center-body .left-menu > dl.index-menu > dt { background: url(../imgs/home_icon.png) 14px 11px no-repeat; }
 .center-body .left-menu > dl.quality-analysis > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
 .center-body .left-menu > dl.work-efficiency > dt { background: url(../imgs/tasktrans_icon.png) 18px 11px no-repeat; }
 .center-body .left-menu > dl.insurance-fee > dt { background: url(../imgs/taskrunning_icon.png) 16px 11px no-repeat; }
 .center-body .left-menu > dl.volume-analysis > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
+.center-body .left-menu > dl.volume-allocation > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
 .center-body .left-menu > dl.medical-analysis > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
 .center-body .left-menu > dl.medicalcare-income > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
 .center-body .left-menu > dl.hospital-sense > dt { background: url(../imgs/taskmanage_icon.png) 17px 11px no-repeat; }
