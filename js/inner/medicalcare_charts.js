@@ -348,7 +348,7 @@
     }
 
     function ajax_chart_02_01() {
-        var year = $('#year_01_01').val();
+        var year = $('#year_02_01').val();
         _ajax({
             url: GLOBAL_AJAX_URL.emergencyIncome,
             data: JSON.stringify({
@@ -356,8 +356,8 @@
             }),
             success: function (res) {
                 if (res.status) {
-                    chart_clear_error($('#mychart_01_01'));
-                    mychart_01_01.setOption({
+                    chart_clear_error($('#mychart_02_01'));
+                    mychart_02_01.setOption({
                         color: ['#578cca'],
                         title: {
                             text: year + '年' + '门急诊收入统计',
@@ -404,16 +404,16 @@
                         ]
                     });
                 } else {
-                    mychart_01_01.clear();
-                    chart_append_error($('#mychart_01_01'), res.messages);
+                    mychart_02_01.clear();
+                    chart_append_error($('#mychart_02_01'), res.messages);
                 }
             }
         });
     }
 
     function ajax_chart_02_02() {
-        var year = $('#year_01_02').val();
-        var month = $('#month_01_02').val();
+        var year = $('#year_02_02').val();
+        var month = $('#month_02_02').val();
         _ajax({
             url: GLOBAL_AJAX_URL.emergencyIncome,
             data:JSON.stringify({
@@ -422,8 +422,8 @@
             }),
             success: function (res) {
                 if (res.status) {
-                    chart_clear_error($('#mychart_01_02'));
-                    mychart_01_02.setOption({
+                    chart_clear_error($('#mychart_02_02'));
+                    mychart_02_02.setOption({
                         color: ['#578cca'],
                         title: {
                             text: year + '年' + month + '月' + '门急诊收入统计',
@@ -474,8 +474,8 @@
                         ]
                     });
                 } else {
-                    mychart_01_02.clear();
-                    chart_append_error($('#mychart_01_02'), res.messages);
+                    mychart_02_02.clear();
+                    chart_append_error($('#mychart_02_02'), res.messages);
                 }
             }
         });
