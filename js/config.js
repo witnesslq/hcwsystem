@@ -13,6 +13,7 @@ var GLOBAL_AJAX_URL = {
     hospitalizedCostConstitute:'',//住院均次费用构成比例
     bigdepartmentFeesTop10:'',//大项目各科室均次费用Top10
     hospitalizeddepartmentFeesTop10:'',//住院均次费用各科室排名Top10
+    hospitalizeddepartmentItemFeesTop10:'',//科室住院均次费用项目贡献度排行Top10
     hospitalDetails:'',//场均住院项目明细
     expertAttendance:'',//专家门诊出勤率
     wellKnownExpertNumber:'',//知名专家号

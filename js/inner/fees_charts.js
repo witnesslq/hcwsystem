@@ -91,6 +91,7 @@
         ajax_list_04_01();
         ajax_list_05_01();
         ajax_list_06_01();
+        ajax_list_08_01();
         ajax_table_07_01()
     }
     /*所有图表点击事件开始*/
@@ -120,6 +121,9 @@
     });
     $('#querybtn_07_01').click(function () {
         ajax_table_07_01();
+    });
+    $('#querybtn_08_01').click(function () {
+        ajax_list_08_01();
     });
     /*所有数据远程请求方法开始*/
     function ajax_panel_01_01() {
@@ -408,6 +412,33 @@
                     $tbody.find('tr').remove();
                     for(var i=0,len=items.length;i<len;i++){
                         $tbody.append('<tr><td>'+items[i][0]+'</td><td>'+items[i][1]+'</td><td>'+items[i][2]+'</td><td>'+items[i][3]+'</td><td>'+items[i][4]+'</td><td>'+items[i][5]+'</td><td>'+items[i][6]+'</td><td>'+items[i][7]+'</td><td>'+items[i][8]+'</td></tr>');
+                    }
+                } else {
+                    top.dhtmlx.alert({
+                        text: res.messages,
+                        title: '提示信息',
+                        ok: '确定'
+                    });
+                }
+            }
+        });
+    }
+    function ajax_list_08_01() {
+        var year = $('#year_08_01').val();
+        var $title=$('#title_08_01');
+        var $list=$('#list_08_01');
+        _ajax({
+            url: GLOBAL_AJAX_URL.hospitalizeddepartmentItemFeesTop10,
+            data:JSON.stringify({
+                year: year
+            }),
+            success: function (res) {
+                if (res.status) {
+                    var items=res.data.sumcost;
+                    $title.text(year+'年科室住院均次费用项目贡献度排行Top10');
+                    $list.find('dd').remove();
+                    for(var i=0,len=items.length;i<len;i++){
+                        $list.append('<dd class="clearfix"> <span class="pull-left">'+items[i][0]+'</span> <span class="pull-right cost">'+items[i][1]+'</span></dd>');
                     }
                 } else {
                     top.dhtmlx.alert({
