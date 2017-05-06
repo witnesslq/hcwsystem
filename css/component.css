@@ -1,0 +1,434 @@
+﻿/*面包屑组件开始*/
+.m-crumb {
+    margin: 0;
+    font-size: 12px;
+    background-color: #eef4f6;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-bottom: 1px solid #dbe3e6;
+}
+
+.m-crumb i {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    width: 5px;
+    height: 8px;
+    background: url(../imgs/crumb_arrow.png) center center no-repeat;
+}
+
+/*面包屑组件结束*/
+/*底部备案开始*/
+.m-footer {
+    padding-left: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #eef4f6;
+    width: 100%;
+    border-top: 1px solid #dbe3e6;
+}
+
+/*底部备案结束*/
+/*下拉弹窗选择组件开始*/
+.m-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+    background: url(../imgs/bluesanjiao.png) 110px 13px no-repeat #fff;
+    width: 130px;
+}
+
+.m-select span {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    line-height: 33px;
+    padding-left: 20px;
+}
+
+.m-select ul {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.m-select li {
+    height: 33px;
+    line-height: 33px;
+    color: #000;
+    padding-left: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e4e4;
+    border-top: none;
+    cursor: pointer;
+}
+
+.m-select li:first-child {
+    border-top: none;
+    border-top: 1px solid #e5e4e4;
+}
+
+.m-select li:hover {
+    color: #fff;
+    background-color: #2a71cb;
+    border-color: #2a71cb;
+}
+
+/*下拉弹窗选择组件结束*/
+/*分页开始*/
+.m-pagenav {
+    overflow: hidden;
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.m-pagenav .sum {
+    float: left;
+    margin-top: 4px;
+}
+
+.m-pagenav .sum > span {
+    margin: 0 5px;
+}
+
+.m-pagenav .sum > select {
+    margin: 0 5px;
+}
+
+.m-pagenav .pagination {
+    float: right;
+}
+
+.m-pagenav .pagination ul {
+    float: left;
+    margin-right: 5px;
+}
+
+.m-pagenav .pagination li {
+    float: left;
+    list-style: none;
+    margin: 0 3px;
+}
+
+.m-pagenav .pagination li a {
+    display: block;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.m-pagenav .pagination li:hover a {
+    background-color: #eee;
+}
+
+.m-pagenav .pagination li.active a, .m-pagenav .pagination li.active:hover a {
+    background-color: #077eed;
+    color: #fff;
+}
+
+.m-pagenav .pagination li.disabled a, .m-pagenav .pagination li.disabled a:focus, .m-pagenav .pagination li.disabled a:hover {
+    cursor: not-allowed;
+}
+
+.m-pagenav .pagination li.disabled:hover a {
+    background-color: #fff;
+}
+
+.m-pagenav .pagination .inputbox {
+    float: left;
+}
+
+.m-pagenav .pagination .inputbox input {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.m-pagenav .pagination .inputbox a {
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: 5px;
+    color: #077eed;
+}
+
+/*分页结束*/
+/*设置日期控件样式开始*/
+.datetimepicker table {
+    width: 190px;
+}
+
+.datetimepicker thead {
+    display: none;
+}
+
+/*图表盒子样式开始*/
+.m-chart-box.long {
+    width: 96%;
+}
+
+.m-chart-box {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 #ccc;
+}
+.m-chart-box.short {
+    width: 31%;
+}
+.m-chart-box .steel_date{
+    padding: 15px 0 0 15px;
+}
+.m-chart-box.my-list{
+    box-shadow: 0 5px 5px 0 #ddd;
+    border:1px solid #37d07d;
+}
+.m-chart-box.my-list .steel_date{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background-color: #37d07d;
+    color:#fff;
+}
+.m-chart-box .steel_date.my-panel{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background-color: #37d07d;
+    color:#fff;
+}
+
+.m-chart-box .steel_date .form_input {
+    width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.m-chart-box .steel_date .form_input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+
+.m-chart-box .steel_date .steel_text {
+    margin-top: 10px;
+}
+
+.m-chart-box .steel_date .form_input.short {
+    width: 30px;
+}
+
+.m-chart-box .steel_date .form_input.long {
+    width: 110px;
+}
+
+.m-chart-box .m-button {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "微软雅黑";
+    color: #333;
+    background-color: #DCDBDB;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 10px;
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #dddddd;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.m-chart-box .steel_date .m-button:hover {
+    background-color: #028a0b;
+}
+
+.m-chart-box .steel_date .m-button:active {
+    box-shadow: inset 0px 2px 3px 2px #AAA;
+}
+
+.m-chart-box .m-button-query {
+    background: #05aa10;
+    color:#fff;
+}
+
+.m-chart-box .chart {
+    height: 450px;
+    background-color: #fff !important;
+}
+
+.m-chart-box .m-panel {
+    background-color: #fff;
+    box-shadow: 3px 3px 5px #ddd;
+    border: 1px solid #eee;
+}
+
+.m-chart-box .m-panel h3 {
+    margin: 0;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.m-chart-box .m-panel ul {
+    margin: 0;
+}
+
+.m-chart-box .m-panel li {
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    font-size:22px;
+}
+.m-chart-box .m-panel li span.color-red{
+    color:#ff0000;
+    margin-left: 10px;
+}
+.m-chart-box .m-panel li span.flag-down{
+    padding-right: 20px;
+    background: url("../imgs/arraw_down.png") no-repeat right center;
+}
+.m-chart-box .m-panel li span.flag-up{
+    padding-right: 20px;
+    background: url("../imgs/arraw_up.png") no-repeat right center;
+}
+
+.m-chart-box .m-panel li:first-child {
+    border-left: none;
+}
+
+.m-chart-box .m-list {
+    min-height: 354px;
+}
+
+.m-chart-box .m-list dl {
+    margin: 0;
+}
+
+.m-chart-box .m-list dt {
+    padding: 10px;
+    font-size:18px;
+    font-weight: normal;
+    color:#000;
+}
+.m-chart-box .m-list dd{
+    margin: 0 10px;
+    padding: 7px 0;
+    border-top: 1px solid #ddd;
+    font-size:14px;
+}
+.m-chart-box .m-list dd .cost{
+    width:120px;
+    text-align: right;
+}
+
+.m-chart-box .m-list h3 {
+    margin: 0;
+    padding: 15px 0 5px 0;
+    font-size: 20px;
+    text-align: center;
+    color:#000;
+}
+.m-chart-box .m-table{
+    margin: 0 15px;
+}
+.m-chart-box .m-table>h3{
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.margin-right-per-47 {
+    margin-right: 47%;
+}
+
+/*图表盒子样式结束*/
+/*内置dhtmlx样式重置*/
+.dhtmlx-success div {
+    background-color: #32D16C;
+    color: #fff;
+    margin: 0;
+    padding: 16px 9px 16px 18px;
+}
+
+.dhtmlx_popup_text,
+.dhtmlx_popup_button,
+.dhtmlx-alert .dhtmlx_popup_title, .dhtmlx-confirm .dhtmlx_popup_title {
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+
+.dhtmlx-alert .dhtmlx_popup_title, .dhtmlx-confirm .dhtmlx_popup_title {
+    background: #0a4494;
+    border: 1px solid #0a4494;
+    color: #fff;
+    box-shadow: none;
+}
+
+.dhtmlx_popup_button {
+    background: #00d6c1;
+    border: 1px solid #00d6c1;
+    box-shadow: none;
+    color: white;
+    line-height: 28px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.dhtmlx_popup_button:active {
+    background: #1A7A8E;
+}
