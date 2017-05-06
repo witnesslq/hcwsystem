@@ -196,24 +196,31 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px 0 #ccc;
+    box-shadow: 1px 1px 6px 0 #ccc;
 }
 .m-chart-box.short {
     width: 31%;
+    margin-left: 1.6%;
 }
 .m-chart-box .steel_date{
     padding: 15px 0 0 15px;
 }
 .m-chart-box.my-list{
     box-shadow: 0 5px 5px 0 #ddd;
-    border:1px solid #37d07d;
+    border:1px solid #0e87ad;
 }
 .m-chart-box.my-list .steel_date{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
-    background-color: #37d07d;
+    background-color: #33add4;
     color:#fff;
+}
+.m-chart-box.my-list .steel_date .m-button-query{
+    background-color: #0e87ad;
+}
+.m-chart-box.my-list .steel_date .m-button-query:hover{
+    background-color: #0c6d8c;
 }
 .m-chart-box .steel_date.my-panel{
     border-top-left-radius: 10px;
@@ -311,7 +318,6 @@
 
 .m-chart-box .m-panel {
     background-color: #fff;
-    box-shadow: 3px 3px 5px #ddd;
     border: 1px solid #eee;
 }
 

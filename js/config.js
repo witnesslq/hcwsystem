@@ -42,6 +42,10 @@ var GLOBAL_JSON = {
             "value": 564
         },
         {
+            "name": "治愈",
+            "value": 2234
+        },
+        {
             "name": "其他",
             "value": 12
         },
@@ -56,10 +60,6 @@ var GLOBAL_JSON = {
         {
             "name": "无效",
             "value": 7
-        },
-        {
-            "name": "治愈",
-            "value": 2234
         }
     ],
     workefficiency:{
